@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <section class="container" id="selected-color">
+        <div class="selectores">
+            <div class="color">
+                <label for="rojo">ROJO</label>
+                <input id="rojo" type="range" min="0" max="255" value="58" step="1">
+                <p id="text-red"></p>
+            </div>
+            <div class="color">
+                <label for="verde">Verde</label>
+                <input id="verde" type="range" min="0" max="255" value="158" step="1">
+                <p id="text-green"></p>
+            </div>
+            <div class="color">
+                <label for="azul">Azul</label>
+                <input id="azul" type="range" min="0" max="255" value="255" step="1">
+                <p id="text-blue"></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container citas">
+        <div class="box">
+            <h2 class="title">Citas motivacionales</h2>
+            <div class="citas-content">
+                <p class="cita"></p>
+                <p class="autor"></p>
+            </div>
+            <button class="cambiar-cita btn" id="btnResetCita" type="button">Cambiar cita</button>
+        </div>
+    </section>
+    <script src="./citas.js"></script>
+    <script src="./scripts.js"></script>
+    <script src="./generadorCitas.js"></script>
+</body>
+</html>
